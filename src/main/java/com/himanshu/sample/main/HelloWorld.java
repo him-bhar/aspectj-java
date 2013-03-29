@@ -18,7 +18,13 @@ package com.himanshu.sample.main;
 public class HelloWorld {
 
 	public static void main(String[] args) {
+		HelloWorld hw = new HelloWorld();
 		System.out.println("Hello World");
+		hw.testfunc();
+	}
+
+	private void testfunc () {
+		System.out.println("Inside testfunc");
 	}
 
 }

@@ -4,7 +4,13 @@ public aspect HelloFromAspectJ {
 
 	pointcut mainMethod() : execution(public static void main(String[]));
 
+	pointcut testfuncPointcut() : execution(private * *(..));
+
 	after() returning : mainMethod() {
-		System.out.println("Hello from AspectJ");
+		System.out.println("Hello from mainMethod() AspectJ pointcut");
+	}
+
+	after() returning : testfuncPointcut() {
+		System.out.println("Hello from testfuncPointcut() AspectJ pointcut");
 	}
 }
