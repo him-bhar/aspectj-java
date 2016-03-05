@@ -5,6 +5,7 @@
 	<aspects>
 		<!-- declare two existing aspects to the weaver -->
 		<aspect name="com.himanshu.sample.aspect.HelloFromAspectJ" />
+		<aspect name="com.himanshu.sample.aspect.AroundAspectDemo" />
 
 		<!-- define a concrete aspect inline -->
 <!-- 		<concrete-aspect name="com.xyz.tracing.MyTracing" -->
