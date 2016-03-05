@@ -22,3 +22,9 @@ In the lib folder in target, you will see. Few dependencies like aspectjrt, aspe
     TESTING ASPECTS
     TESTING ASPECTS
 
+	
+To run first build:
+    aspectj-only-aspects
+	then, aspectj-java-class-noaspect
+	
+	C:\Users\himanshu\Documents\GitHub\aspectj-java\load-time-weaving\aspectj-java-class-noaspect\target>java -javaagent:lib\aspectjweaver-1.7.2.jar -classpath *;lib\* com.himanshu.sample.aspect.stubs.HelloAspect
